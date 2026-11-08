@@ -89,7 +89,7 @@ const projects = [
     thumbnail: P + 'aurelia-cafe-1.jpg',
     gallery: [P + 'aurelia-cafe-2.jpg'],
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    liveUrl: 'https://your-aurelia-cafe.netlify.app',          // PLACEHOLDER: replace with your Netlify URL
+    liveUrl: 'https://restaurant-aurelia.netlify.app/',
     githubUrl: '',
     featured: true,
     year: 2026
@@ -119,7 +119,7 @@ const projects = [
     thumbnail: P + 'salt-cafe-1.jpg',
     gallery: [P + 'salt-cafe-2.jpg'],
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    liveUrl: 'https://your-salt-cafe.netlify.app',             // PLACEHOLDER
+    liveUrl: 'https://restaurant-the-salt-cafe.netlify.app/',
     githubUrl: '',
     featured: false,
     year: 2026
