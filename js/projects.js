@@ -90,7 +90,7 @@ const projects = [
     gallery: [P + 'aurelia-cafe-2.jpg'],
     technologies: ['HTML', 'CSS', 'JavaScript'],
     liveUrl: 'https://your-aurelia-cafe.netlify.app',          // PLACEHOLDER: replace with your Netlify URL
-    githubUrl: 'https://github.com/NexaWeb-dev/sample-restaurant-website-2',
+    githubUrl: '',
     featured: true,
     year: 2026
   },
@@ -120,7 +120,7 @@ const projects = [
     gallery: [P + 'salt-cafe-2.jpg'],
     technologies: ['HTML', 'CSS', 'JavaScript'],
     liveUrl: 'https://your-salt-cafe.netlify.app',             // PLACEHOLDER
-    githubUrl: 'https://github.com/NexaWeb-dev/the-salt-cafe-restaurant-website',
+    githubUrl: '',
     featured: false,
     year: 2026
   },
@@ -196,7 +196,7 @@ const projects = [
     thumbnail: P + 'music-streaming.jpg',
     technologies: ['React', 'Node.js', 'PostgreSQL'],
     liveUrl: 'https://your-music-project.netlify.app',
-    githubUrl: 'https://github.com/your-username/music-app',
+    githubUrl: '',
     featured: false, year: 2025
   },
   {
@@ -218,7 +218,7 @@ const projects = [
     thumbnail: P + 'lms-platform.jpg',
     technologies: ['React', 'Node.js', 'Express', 'PostgreSQL'],
     liveUrl: 'https://your-lms-platform.netlify.app',
-    githubUrl: 'https://github.com/your-username/lms-platform',
+    githubUrl: '',
     featured: false, year: 2025
   },
   {
@@ -240,7 +240,7 @@ const projects = [
     thumbnail: P + 'weather-app.jpg',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Weather API'],
     liveUrl: 'https://your-weather-app.netlify.app',
-    githubUrl: 'https://github.com/your-username/weather-app',
+    githubUrl: '',
     featured: false, year: 2024
   },
   {
@@ -262,7 +262,7 @@ const projects = [
     thumbnail: P + 'developer-tools.jpg',
     technologies: ['JavaScript', 'Node.js'],
     liveUrl: 'https://your-developer-tools.netlify.app',
-    githubUrl: 'https://github.com/your-username/developer-tools',
+    githubUrl: '',
     featured: false, year: 2024
   },
   {
@@ -273,7 +273,7 @@ const projects = [
     thumbnail: P + 'cicd-dashboard.jpg',
     technologies: ['Jenkins', 'Docker', 'Terraform', 'AWS'],
     liveUrl: '',
-    githubUrl: 'https://github.com/your-username/cicd-dashboard',
+    githubUrl: '',
     featured: false, year: 2025
   },
   {

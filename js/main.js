@@ -139,16 +139,13 @@
   }
 
   function buildLinks() {
-    ['navGithub', 'heroGithub', 'aboutGithub'].forEach(id => { const a = document.getElementById(id); a.href = cfg.github; });
     const rows = [
       ['Email', `<a href="mailto:${esc(cfg.email)}">${esc(cfg.email)}</a>`, U.isPlaceholderUrl(cfg.email)],
-      ['GitHub', `<a href="${esc(cfg.github)}" target="_blank" rel="noopener noreferrer">${esc(U.shortUrl(cfg.github))}<span class="sr"> (opens in a new tab)</span></a>`, false],
       ['LinkedIn', `<a href="${esc(cfg.linkedin)}" target="_blank" rel="noopener noreferrer">${esc(U.shortUrl(cfg.linkedin))}<span class="sr"> (opens in a new tab)</span></a>`, U.isPlaceholderUrl(cfg.linkedin)],
       ['Portfolio', '<a href="#contact">Use the contact form →</a>', false]
     ];
     $('#contactList').innerHTML = rows.map(([k, v, ph]) => `<li><span>${k}</span><span>${v}${ph ? ' <small>(placeholder)</small>' : ''}</span></li>`).join('');
     $('#footLinks').innerHTML =
-      `<li><a href="${esc(cfg.github)}" target="_blank" rel="noopener noreferrer">GitHub<span class="sr"> (opens in a new tab)</span></a></li>` +
       `<li><a href="${esc(cfg.linkedin)}" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr"> (opens in a new tab)</span></a></li>` +
       `<li><a href="mailto:${esc(cfg.email)}">Email</a></li>`;
     $('#footOwner').textContent = cfg.owner || cfg.brand;
