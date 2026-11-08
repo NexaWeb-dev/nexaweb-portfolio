@@ -12,8 +12,8 @@
 /* ---------- Hero ---------- */
 .status__dot { animation: pulse 2.2s ease-out infinite; }
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(198, 255, 94, .55); }
-  70%, 100% { box-shadow: 0 0 0 .6rem rgba(198, 255, 94, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(94, 200, 255, .55); }
+  70%, 100% { box-shadow: 0 0 0 .6rem rgba(94, 200, 255, 0); }
 }
 .frame--1 { animation: float 7s ease-in-out infinite; }
 .frame--2 { animation: float 8.5s ease-in-out -2s infinite; }

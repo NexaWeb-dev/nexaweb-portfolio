@@ -161,7 +161,7 @@ code { font: 400 .85em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 .search input::-webkit-search-cancel-button { filter: invert(1); }
 .select { flex: 0 1 16rem; display: flex; flex-direction: column; }
 .select label, .field label { margin-bottom: .2rem; font: 500 .66rem/1.4 var(--body); letter-spacing: .22em; text-transform: uppercase; color: var(--muted); }
-.select select { padding-right: 1.6rem; cursor: pointer; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%23C6FF5E' stroke-width='1.4'%3E%3Cpath d='M1 1l5 5 5-5'/%3E%3C/svg%3E") no-repeat right .2rem center; }
+.select select { padding-right: 1.6rem; cursor: pointer; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%235EC8FF' stroke-width='1.4'%3E%3Cpath d='M1 1l5 5 5-5'/%3E%3C/svg%3E") no-repeat right .2rem center; }
 .select select option { background: var(--bg2); color: var(--text); }
 .chips { display: flex; flex-wrap: wrap; gap: .5rem; }
 .chip { display: inline-flex; align-items: center; gap: .5rem; min-height: 2.5rem; padding: .4rem 1rem; border: 1px solid var(--border); background: transparent; font: 500 .72rem/1 var(--body); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); transition: background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease); }
