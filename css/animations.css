@@ -1,0 +1,46 @@
+/* =========================================================
+   NexaWeb: motion
+   Scroll reveal (only when JS runs), hero details, marquee,
+   card entrance, filter switching and modal transitions.
+   Everything is switched off under prefers-reduced-motion.
+   ========================================================= */
+
+/* ---------- Scroll reveal ---------- */
+.js .rv { opacity: 0; transform: translateY(28px); transition: opacity .9s var(--ease), transform .9s var(--ease); transition-delay: calc(var(--i, 0) * 110ms); }
+.js .rv.is-in { opacity: 1; transform: none; }
+
+/* ---------- Hero ---------- */
+.status__dot { animation: pulse 2.2s ease-out infinite; }
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(198, 255, 94, .55); }
+  70%, 100% { box-shadow: 0 0 0 .6rem rgba(198, 255, 94, 0); }
+}
+.frame--1 { animation: float 7s ease-in-out infinite; }
+.frame--2 { animation: float 8.5s ease-in-out -2s infinite; }
+.frame--3 { animation: float 7.5s ease-in-out -4s infinite; }
+@keyframes float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -10px; } }
+
+.marquee__track { animation: marquee 46s linear infinite; }
+.marquee:hover .marquee__track { animation-play-state: paused; }
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+/* ---------- Project cards + filter switching ---------- */
+.card { animation: rise .7s var(--ease) both; animation-delay: var(--d, 0ms); }
+@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+.grid { transition: opacity .15s ease, transform .15s ease; }
+.grid.is-switching { opacity: 0; transform: translateY(8px); }
+
+/* ---------- Modal ---------- */
+.modal__backdrop { opacity: 0; transition: opacity .28s ease; }
+.modal__panel { opacity: 0; transform: translateY(26px) scale(.985); transition: opacity .28s ease, transform .35s var(--ease); }
+.modal.is-open .modal__backdrop { opacity: 1; }
+.modal.is-open .modal__panel { opacity: 1; transform: none; }
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .js .rv { opacity: 1; transform: none; }
+  .marquee { overflow-x: auto; }
+  .modal__backdrop, .modal__panel { opacity: 1; transform: none; }
+}
