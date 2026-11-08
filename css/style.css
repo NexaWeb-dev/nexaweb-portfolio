@@ -8,7 +8,7 @@
   --bg2: #181A1F;
   --text: #F5F5F2;
   --muted: #A1A1AA;
-  --accent: #C6FF5E;
+  --accent: #5EC8FF;
   --accent-ink: #101114;
   --border: #303238;
 
@@ -69,7 +69,7 @@ code { font: 400 .85em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 .btn .arr { display: inline-block; transition: transform .35s var(--ease); }
 .btn:hover .arr { transform: translate(3px, -3px); }
 .btn--accent { background: var(--accent); color: var(--accent-ink); }
-.btn--accent:hover { background: #d9ff8f; }
+.btn--accent:hover { background: #8fdaff; }
 .btn--outline { border-color: var(--text); color: var(--text); }
 .btn--outline:hover { background: var(--text); color: var(--bg); }
 .btn--text { padding-inline: .4rem; color: var(--text); position: relative; }
