@@ -43,7 +43,7 @@
           ${gh ? ext(p.githubUrl, 'btn--outline btn--sm', 'GitHub Source') : ''}
           <button type="button" class="btn btn--text btn--sm" data-open="${p.id}">Details</button>
         </div>
-        ${ph ? '<p class="card__note">Placeholder link</p>' : ''}
+        ${ph ? '<p class="card__note">Placeholder link</p>' : '<p class="card__note" aria-hidden="true">&nbsp;</p>'}
       </div>
     </article>`;
   }
