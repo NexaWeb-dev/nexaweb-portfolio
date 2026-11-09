@@ -104,7 +104,7 @@ const projects = [
     thumbnail: P + 'meridian-coffee-atlas-1.jpg',
     gallery: [P + 'meridian-coffee-atlas-2.jpg'],
     technologies: ['HTML', 'CSS', 'JavaScript', 'Leaflet'],
-    liveUrl: 'https://your-coffee-locator.netlify.app',        // PLACEHOLDER
+    liveUrl: 'https://restaurant-meridian.netlify.app/',
     githubUrl: '',
     featured: true,
     year: 2026
@@ -164,7 +164,7 @@ const projects = [
     thumbnail: P + 'ironpulse-fitness-1.jpg',
     gallery: [P + 'ironpulse-fitness-2.jpg'],
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    liveUrl: 'https://your-ironpulse-fitness.netlify.app',     // PLACEHOLDER
+    liveUrl: 'https://gym-ironpulsee.netlify.app/',
     githubUrl: '',
     featured: true,
     year: 2026
@@ -180,6 +180,21 @@ const projects = [
     gallery: [P + 'urbannest-realty-2.jpg'],
     technologies: ['HTML', 'CSS', 'JavaScript'],
     liveUrl: 'https://your-urbannest-realty.netlify.app',      // PLACEHOLDER
+    githubUrl: '',
+    featured: false,
+    year: 2026
+  },
+  {
+    id: 17,
+    name: 'NOIR Fine Dining',
+    category: 'Websites',
+    description: 'A dark, cinematic luxury restaurant website with a signature-dishes showcase, filterable menu, gallery lightbox and table reservations.',
+    details: 'A premium website concept for a modern luxury restaurant in Bengaluru. It pairs a full-bleed dining-room hero and elegant serif typography with a charcoal-and-gold palette, and every section is built from plain HTML, CSS and JavaScript.',
+    features: ['Full-bleed cinematic hero with animated headline', 'Signature dishes in an editorial layout with scroll reveals', 'Menu with category filtering and a gallery with lightbox', 'Validated reservation form', 'Fully responsive, with reduced-motion support'],
+    thumbnail: P + 'noir-restaurant-1.jpg',
+    gallery: [P + 'noir-restaurant-2.jpg'],
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    liveUrl: 'https://restaurant-noirr.netlify.app/',
     githubUrl: '',
     featured: false,
     year: 2026
