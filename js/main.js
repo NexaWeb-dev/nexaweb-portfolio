@@ -98,7 +98,21 @@
     const section = $('#featured');
     section.hidden = list.length === 0;
     $('#featuredList').innerHTML = list.map(featureHtml).join('');
+    equalizeFeatured();
   }
+
+  // Make the three featured text cards the same height, whatever the title or description length.
+  function equalizeFeatured() {
+    const bodies = $$('.feature__body');
+    if (!bodies.length) return;
+    bodies.forEach(b => { b.style.minHeight = ''; });
+    const max = Math.max.apply(null, bodies.map(b => b.offsetHeight));
+    bodies.forEach(b => { b.style.minHeight = max + 'px'; });
+  }
+  let eqTimer;
+  window.addEventListener('resize', () => { clearTimeout(eqTimer); eqTimer = setTimeout(equalizeFeatured, 120); });
+  window.addEventListener('load', equalizeFeatured);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(equalizeFeatured);
 
   function buildCategories() {
     const cats = BF.filters.categories();

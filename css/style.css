@@ -135,7 +135,7 @@ code { font: 400 .85em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 .feature__body { grid-column: 8 / 13; grid-row: 1; position: relative; z-index: 2; padding: clamp(1.6rem, 3vw, 2.6rem); background: var(--bg2); border: 1px solid var(--border); }
 .feature--2 .feature__media { grid-column: 5 / 13; }
 .feature--2 .feature__body { grid-column: 1 / 6; }
-.feature--3 .feature__media { grid-column: 2 / 10; }
+.feature--3 .feature__media { grid-column: 1 / 9; }
 .feature--3 .feature__body { grid-column: 8 / 13; margin-top: 18%; }
 .feature__num { position: absolute; top: -.9rem; right: 1.2rem; margin: 0; padding: 0 .5rem; background: var(--bg); font: 600 1rem/1.8 var(--head); letter-spacing: .1em; color: var(--accent); }
 .feature h3 { font-size: clamp(1.9rem, 3.2vw, 2.9rem); margin: .2rem 0 1rem; }
